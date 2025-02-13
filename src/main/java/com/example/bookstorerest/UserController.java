@@ -21,4 +21,15 @@ public class UserController {
     userList.add(user);
     return user;
     }
+
+    @DeleteMapping("{id}")
+    public User deleteUser(@PathVariable Long id){
+        for (User user : userList ) {
+            if(user.getId().equals(id)){
+                return user;
+            }
+         }
+        return null;
+
+    }
 }
