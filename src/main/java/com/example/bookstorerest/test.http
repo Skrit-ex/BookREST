@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
 "id": 23,
-"name": "Test 1",
+"name": "Test 112",
 "username": "test41 ",
 "password": "test 2"
 }
@@ -11,3 +11,16 @@ Content-Type: application/json
 ###
 
 GET  http://localhost:8080/user
+
+###
+POST http://localhost:8080/user/calc
+Content-Type: application/json
+
+{
+"id": 12,
+"num1": 114,
+"num2": 12,
+"type": "SUM"
+}
+
+###
